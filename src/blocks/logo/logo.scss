@@ -1,0 +1,44 @@
+.logo {
+
+  $block-name:                &; // #{$block-name}__element
+
+  white-space: nowrap;
+
+  svg {
+    display: block;
+    width: 39px;
+    height: 38px;
+    fill: $main-color;
+
+    @media screen and (min-width: $screen-md) {
+      width: 43px;
+      height: 42px;
+    }
+
+    @media screen and (min-width: $screen-xl) {
+      width: 66px;
+      height: 64px;
+    }
+  }
+
+  &--trainers {
+
+    svg {
+      fill: $main-color--trainers;
+    }
+  }
+
+  &--business {
+
+    svg {
+      fill: $main-color--business;
+    }
+  }
+
+  &--portal {
+
+    svg {
+      fill: $main-color--portal;
+    }
+  }
+}

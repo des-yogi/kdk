@@ -1,0 +1,120 @@
+<!--DEV
+
+Нужно убрать пробел между @-ами:
+
+@ @include('blocks/page-header/page-header.html')
+
+-->
+
+<header class="page-header" role="banner">
+
+  <div class="container">
+
+    <div class="page-header__row">
+
+      <a href="index.html" class="page-header__logo">
+        <div class="logo">
+          <svg width="39" height="38"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#kdk-logo"></use></svg>
+        </div>
+        <div class="page-header__logo-text">
+          <span>Українська Просвітницька</span>
+          <span>Мережа Харчової Безпеки</span>
+        </div>
+      </a>
+
+      <div class="page-header__user">
+        <button class="page-header__btn  page-header__btn--login" type="button"><span>Увійти в кабінет</span></button>
+        <button class="page-header__btn  page-header__btn--menu" type="button" data-toggle="collapse" data-target="#mob-menu" aria-expanded="false" aria-controls="mob-menu"><span class="visually-hidden">Меню</span></button>
+      </div>
+
+      <nav id="mob-menu" class="collapse  sidebar-nav  page-header__nav-mob">
+
+        <ul id="metismenu-mob" class="metismenu">
+
+          <li class="mm-active">
+            <a href="#" class="">Проект МАТРА</a>
+          </li>
+
+          <li class="">
+            <a href="#" class="">Події</a>
+          </li>
+
+          <li>
+            <a class="has-arrow" href="#" aria-expanded="false">Тренерам</a>
+            <ul class="">
+              <li>
+                <a href="#">Навчальні матеріали</a>
+              </li>
+              <li>
+                <a href="#">Умови сертифікації</a>
+              </li>
+              <li>
+                <a href="#">Сертифіковані тренери</a>
+              </li>
+              <li>
+                <a href="#">Тренерська мережа</a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a class="has-arrow" href="#" aria-expanded="false">Підприємствам</a>
+            <ul class="">
+              <li>
+                <a href="#">Навчальні матеріали</a>
+              </li>
+              <li>
+                <a href="#">Умови сертифікації</a>
+              </li>
+              <li>
+                <a href="#">Сертифіковані тренери</a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <nav class="topbar-nav  is-hoverable  page-header__nav-dt">
+        <ul class="metismenu" id="metismenu-dt">
+          <li>
+            <a href="#">Проект МАТРА</a>
+          </li>
+          <li>
+            <a href="#">Події</a>
+          </li>
+          <li>
+            <a class="has-arrow" href="#" aria-expanded="false">Тренерам</a>
+            <ul class="mm-collapse">
+              <li>
+                <a href="#">Навчальні матеріали</a>
+              </li>
+              <li>
+                <a href="#">Умови сертифікації</a>
+              </li>
+              <li>
+                <a href="#">Сертифіковані тренери</a>
+              </li>
+              <li>
+                <a href="#">Тренерська мережа</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="has-arrow" href="#" aria-expanded="false">Підприємствам</a>
+            <ul class="mm-collapse">
+              <li><a href="#">item 4.1</a></li>
+              <li><a href="#">item 4.2</a></li>
+              <li><a href="#">item 4.3</a></li>
+              <li><a href="#">item 4.4</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+
+  </div>
+
+</header>

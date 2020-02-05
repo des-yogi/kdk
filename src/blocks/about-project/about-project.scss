@@ -1,0 +1,52 @@
+.about-project {
+  padding: 32px 0;
+
+  @media (min-width: $screen-xl) {
+    padding: 40px 0;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__intro {
+
+  }
+
+  &__news {
+
+  }
+
+  &__content {
+    margin-bottom: 20px;
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 30px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title-col {
+    @include col(xs, 12);
+    @include col(xl, 4);
+  }
+
+  &__text-col {
+    @include col(xs, 12);
+    @include col(xl, 7);
+  }
+
+  &__title {
+    padding-top: 20px;
+    margin-top: 0;
+    border-top: 2px solid $main-color;
+  }
+
+  &__text {
+
+    @media (min-width: $screen-xl) {
+      padding-top: 20px;
+    }
+  }
+}

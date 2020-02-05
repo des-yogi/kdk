@@ -1,0 +1,148 @@
+.page-header {
+  padding: 20px 0;
+  border-bottom: 2px solid $border-color;
+
+  @media (min-width: $screen-xl) {
+    padding: 15px 0;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (min-width: $screen-xl) {
+
+    }
+  }
+
+  &__logo {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+
+    span {
+      display: block;
+      color: $title-color;
+    }
+  }
+
+  &__logo-text {
+    margin-left: 12px;
+    font-size: 11px;
+    font-size: calc( 10px + (16 - 10) * (100vw - 320px) / (1440 - 320) );
+    font-weight: 700;
+    line-height: 1.3;
+
+    @media (min-width: $screen-xl) {
+      margin-left: 18px;
+      font-size: 16.3px;
+    }
+  }
+
+  &__user {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+
+    @media (min-width: $screen-xl) {
+      order: 1;
+    }
+  }
+
+  &__nav-mob {
+    flex: 1 0 100%;
+    padding-left: 20px;
+    margin-top: 54px;
+    margin-bottom: 12px;
+    border-left: 2px solid $main-color;
+
+    @media (min-width: $screen-xl) {
+      display: none;
+    }
+
+    .metismenu {
+      max-width: 260px;
+    }
+  }
+
+  &__nav-dt {
+    display: none;
+
+    @media (min-width: $screen-xl) {
+      flex: 0 0 auto;
+      display: block;
+      margin-right: 64px;
+      margin-left: auto;
+    }
+  }
+
+  &__btn {
+    display: inline-flex;
+    align-items: center;
+    min-width: 24px;
+    height: 24px;
+    white-space: nowrap;
+    user-select: none;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: inherit;
+    line-height: $line-height;
+    color: $text-color;
+    background-color: $white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+
+    &--login {
+      margin-right: 24px;
+      background-size: 20px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: svg-load('../blocks/sprite-svg/svg/account-icon.svg', fill=$title-color);
+
+      &:hover,
+      &:focus {
+        background-image: svg-load('../blocks/sprite-svg/svg/account-icon.svg', fill=$main-color);
+      }
+
+      @media (min-width: $screen-md) {
+        background-position: right 3px center;
+      }
+
+      @media (min-width: $screen-xl) {
+        margin-right: 0;
+      }
+
+      span {
+        display: none;
+
+        @media (min-width: $screen-md) {
+          display: block;
+          padding-right: 32px;
+          line-height: 1;
+        }
+      }
+    }
+
+    &--menu {
+      background-size: 20px 16px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: svg-load('../blocks/sprite-svg/svg/burger-icon.svg', fill=$title-color);
+
+      &:hover,
+      &:focus {
+        background-image: svg-load('../blocks/sprite-svg/svg/burger-icon.svg', fill=$main-color);
+      }
+
+      @media (min-width: $screen-xl) {
+        display: none;
+      }
+    }
+  }
+}
