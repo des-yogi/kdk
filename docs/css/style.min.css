@@ -903,6 +903,10 @@ a[href^="tel:"] {
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='20' viewBox='0 0 16 20' fill='%23df701e'%3E%3Cpath d='M9,7h5.5L9,1.5ZM2,0h8l6,6V18a2,2,0,0,1-2,2H2a2,2,0,0,1-1.41-.59A2,2,0,0,1,0,18V2A2,2,0,0,1,2,0Zm9,16V14H2v2Zm3-4V10H2v2Z'/%3E%3C/svg%3E"); }
 .doc-link:hover, .doc-link:focus {
     color: #df701e; }
+.copyrights {
+  padding: 15px 0;
+  color: white;
+  background-color: #191a3f; }
 /* &__element {
   @include col(); // малые ширины — 12 из 12, промежутки по умолчанию
   @include col(sm, 6, $grid-columns, 10px);  // SM (480 по умолчанию) — 6 из 12, промежутки 10px
@@ -1867,6 +1871,30 @@ input:checked ~ .field-checkbox__name-text:after {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='8' viewBox='0 0 14 8' fill='%23df701e'%3E%3Cpolygon points='0 1.39 7 8 14 1.39 12.52 0 7 5.21 1.48 0 0 1.39'/%3E%3C/svg%3E"); }
 .about-project {
   padding: 32px 0; }
+.about-project__intro {
+    margin-bottom: 30px; }
+.about-project__intro-logo {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 12px;
+    padding-right: 12px; }
+.about-project__intro-logo img {
+      display: block;
+      width: 100%;
+      max-width: 435px; }
+.about-project__intro-text {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 12px;
+    padding-right: 12px; }
+.about-project__intro-text h1 {
+      margin-top: 0; }
+.about-project__intro-text div {
+      height: 100%; }
 .about-project__content {
     margin-bottom: 20px; }
 .about-project__content:last-child {
@@ -1935,7 +1963,21 @@ input:checked ~ .field-checkbox__name-text:after {
               justify-content: flex-start;
       margin-top: 30px; }
         .pagination__list li + li {
-          margin-left: 15px; } }
+          margin-left: 15px; }
+      .about-project__intro-logo {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 33.33333%;
+                flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+        padding-left: 12px;
+        padding-right: 12px; }
+      .about-project__intro-text {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 66.66667%;
+                flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+        padding-left: 12px;
+        padding-right: 12px; } }
 @media screen and (min-width: 768px) {
       .logo svg {
         width: 43px;
@@ -2052,6 +2094,19 @@ input:checked ~ .field-checkbox__name-text:after {
       margin-bottom: 45px; }
     .about-project {
       padding: 40px 0; }
+      .about-project__intro {
+        margin-bottom: 40px; }
+      .about-project__intro-text {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 58.33333%;
+                flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+        padding-left: 12px;
+        padding-right: 12px; }
+        .about-project__intro-text div {
+          padding-right: 60px;
+          border-bottom: 2px solid #df701e;
+          border-right: 2px solid #df701e; }
       .about-project__content {
         margin-bottom: 30px; }
       .about-project__title-col {
