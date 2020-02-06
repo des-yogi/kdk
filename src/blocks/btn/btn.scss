@@ -5,29 +5,30 @@
   box-sizing: border-box;
   display: inline-block;
   margin: 0;
-  // padding: $field-padding-vertical  $field-padding-horizontal;
+  padding: 10px 20px;
   white-space: nowrap;
   vertical-align: middle;
   user-select: none;
   text-align: center;
-  font-size: 1em;
+  font-size: 16px;
+  font-weight: 700;
   font-family: inherit;
-  line-height: $line-height;
+  line-height: 1;
   text-decoration: none;
   text-transform: none;
-  color: $text-color;
+  color: $main-color;
   border-radius: $border-radius;
-  border: 1px solid $gray-lighter;
-  background-color: $gray-lightest;
+  border: 2px solid $main-color;
+  background-color: $white;
   background-image: none;
   cursor: pointer;
+  transition: all 0.2s ease-out;
 
   &:hover,
   &:focus {
     text-decoration: none;
-    color: $text-color;
-    // background-color: darken($gray-lightest, 10%);
-    // border-color: darken($gray-lighter, 12%);
+    color: $white;
+    background-color: $main-color;
   }
 
   &:active,
@@ -37,11 +38,10 @@
 
   &--disabled,
   &:disabled {
-    // opacity: $opacity;
     cursor: not-allowed;
-    color: $text-color;
-    background-color: $gray-lightest;
-    border-color: $gray-lighter;
+    color: $main-color;
+    background-color: rgba(223, 112, 30, 0.35);
+    border-color: rgba(223, 112, 30, 0.05);
 
     @at-root a.btn--disabled {
       pointer-events: none;
@@ -54,24 +54,34 @@
   // }
 
 
+  &--link {
+    padding-left: 5px;
+    padding-right: 48px;
+    color: $text-color !important;
+    border: none;
+    background-size: 8px 14px;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-image: svg-load('../blocks/sprite-svg/svg/arrow-right-icon.svg', fill=$text-color);
 
-  // &--main {
-  //   color: #fff;
-  //   background-color: $color-main;
-  //   border: 1px solid $color-main;
+    &:hover,
+    &:focus {
+      color: $main-color !important;
+      background-color: $white;
+      background-image: svg-load('../blocks/sprite-svg/svg/arrow-right-icon.svg', fill=$main-color);
+    }
 
-  //   &:hover,
-  //   &:focus {
-  //     color: #fff;
-  //     background-color: darken($color-main, 10%);
-  //     border-color: darken($color-main, 12%);
-  //   }
+    &--disabled,
+    &:disabled {
+      color: $main-color !important;
+      background-color: $white;
+      background-image: svg-load('../blocks/sprite-svg/svg/arrow-right-icon.svg', fill=$main-color);
+      opacity: 0.5;
+      cursor: not-allowed;
 
-  //   &--disabled,
-  //   &:disabled {
-  //     color: #fff;
-  //     background-color: $color-main;
-  //     border-color: $color-main;
-  //   }
-  // }
+      @at-root a.btn--link--disabled {
+      pointer-events: none;
+    }
+    }
+  }
 }

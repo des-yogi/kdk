@@ -1,11 +1,69 @@
 <!--DEV
-
-Нужно убрать пробел между @-ами:
-
 @ @include('blocks/page-footer/page-footer.html')
-
 -->
 
 <footer class="page-footer" role="contentinfo">
-  page-footer
+
+  <div class="container">
+    <div class="row">
+
+      <div class="page-footer__logo-col">
+        <a href="#" class="page-footer__logo" target="_blank" rel="nofollow noopener">
+          <picture>
+            <source srcset="img/kingdom-logo.webp" type="image/webp">
+            <img src="img/kingdom-logo.png" alt="Matra project" width="435" height="328">
+          </picture>
+        </a>
+      </div>
+
+      <div class="page-footer__link-col">
+        <div class="page-footer__link">
+          <h5 class="page-footer__title">Тренерам</h5>
+          <ul class="list-nostyled">
+            <li><a href="#">Навчальні матеріали</a></li>
+            <li><a href="#">Умови сертифікації</a></li>
+            <li><a href="#">Сертифіковані тренери</a></li>
+            <li><a href="#">Тренерська мережа</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="page-footer__link-col">
+        <div class="page-footer__link">
+          <h5 class="page-footer__title">Підприємствам</h5>
+          <ul class="list-nostyled">
+            <li><a href="#">Матеріали тренінгів</a></li>
+            <li><a href="#">Матеріали стратегічних сесій</a></li>
+            <li><a href="#">Декларування</a></li>
+            <li><a href="#">Мережа FPc</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="page-footer__contacts-col">
+        <div class="page-footer__contacts">
+          <h5 class="page-footer__title">Контакти</h5>
+          <a href="tel:+380683565625" class="page-footer__tel-link">+38 (068) 356 56 25</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="page-footer__copyrights">
+    <div class="container">
+      <div class="copyrights">
+        <div class="copyrights__text">
+          <span>© 2020. КДК.</span>
+          <span><a href="#">Умови конфіденційності.</a></span>
+          <span><a href="#">Умови використання сайту.</a></span>
+        </div>
+        <a href="https://it-doors.com" class="copyrights__dev" title="IT-Doors Outsourcing" target="_blank" rel="nofollow noopener">
+          <span>Created by:</span>
+          <img src="img/it-doors-logo.svg" alt="IT-Doors logo" width="75" height="27">
+        </a>
+      </div>
+    </div>
+  </div>
+
 </footer>

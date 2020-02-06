@@ -31,7 +31,14 @@
     "countdown": [],
     "text-input": [],
     "metismenu": [],
-    "about-project": []
+    "about-project": [],
+    "event-slider": [],
+    "banner-card": [],
+    "declaration-portal": [],
+    "social-link": [],
+    "event-card": [],
+    "main": [],
+    "copyrights": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

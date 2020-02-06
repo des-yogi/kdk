@@ -1,0 +1,9 @@
+.event-slider {
+  margin-bottom: 20px;
+
+  @media (min-width: $screen-xl) {
+    margin-bottom: 30px;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+}
