@@ -1,9 +1,104 @@
-// В этом файле должны быть стили для БЭМ-блока social-link, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .social-link {
 
   $block-name:                &; // #{$block-name}__element
 
+  &__list {
+    display: flex;
+
+    @media (min-width: $screen-md) {
+      justify-content: flex-end;
+    }
+
+    @media (min-width: $screen-xl) {
+      justify-content: initial;
+    }
+  }
+
+  &__item {
+    margin-top: 0;
+    margin-right: 24px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    vertical-align: top;
+    width: 24px;
+    height: 24px;
+    color: $text-color;
+
+    &--tg,
+    &--viber,
+    &--messenger,
+    &--fb,
+    &--whatsapp,
+    &--youtube {
+      background-color: transparent;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--tg {
+      background-size: 20px 16px;
+      background-image: svg-load('../blocks/sprite-svg/svg/telegram-icon.svg', fill=$text-color);
+
+      &:hover,
+      &:focus {
+        background-image: svg-load('../blocks/sprite-svg/svg/telegram-icon.svg', fill=$main-color);
+      }
+    }
+
+    &--viber {
+      background-size: 18px 18px;
+      background-image: svg-load('../blocks/sprite-svg/svg/viber-icon.svg', fill=$text-color);
+
+      &:hover,
+      &:focus {
+        background-image: svg-load('../blocks/sprite-svg/svg/viber-icon.svg', fill=$main-color);
+      }
+    }
+
+    &--messenger {
+      background-size: 18px 18px;
+      background-image: svg-load('../blocks/sprite-svg/svg/messenger-icon.svg', fill=$text-color);
+
+      &:hover,
+      &:focus {
+        background-image: svg-load('../blocks/sprite-svg/svg/messenger-icon.svg', fill=$main-color);
+      }
+    }
+
+    &--fb {
+      background-size: 10px 20px;
+      background-image: svg-load('../blocks/sprite-svg/svg/facebook-icon.svg', fill=$text-color);
+
+      &:hover,
+      &:focus {
+        background-image: svg-load('../blocks/sprite-svg/svg/facebook-icon.svg', fill=$main-color);
+      }
+    }
+
+    &--whatsapp {
+      background-size: 20px;
+      background-image: svg-load('../blocks/sprite-svg/svg/whatsapp-icon.svg', fill=$text-color);
+
+      &:hover,
+      &:focus {
+        background-image: svg-load('../blocks/sprite-svg/svg/whatsapp-icon.svg', fill=$main-color);
+      }
+    }
+
+    &--youtube {
+      background-size: 20px 14px;
+      background-image: svg-load('../blocks/sprite-svg/svg/youtube-icon.svg', fill=$text-color);
+
+      &:hover,
+      &:focus {
+        background-image: svg-load('../blocks/sprite-svg/svg/youtube-icon.svg', fill=$main-color);
+      }
+    }
+  }
 }
