@@ -1,0 +1,133 @@
+.event-article {
+  margin-bottom: 30px;
+
+  @media (min-width: $screen-xl) {
+    margin-bottom: 40px;
+  }
+
+  $block-name:                &;  // #{$block-name}__element
+
+  &__header {
+
+  }
+
+  &__title {
+
+    span {
+      display: inline-block;
+      vertical-align: baseline;
+
+      &:first-child {
+        width: 100%;
+
+        @media (min-width: $screen-md) {
+          width: auto;
+          margin-right: 24px;
+        }
+      }
+
+      &:last-child {
+        display: inline-block;
+        vertical-align: baseline;
+        width: 100%;
+        font-size: 18px;
+        font-weight: 700;
+        white-space: nowrap;
+        color: $main-color--trainers;
+
+        @media (min-width: $screen-md) {
+          width: auto;
+        }
+      }
+    }
+  }
+
+  &__training,
+  &__address,
+  &__date,
+  &__time {
+    display: inline-flex;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 35px;
+    font-size: 14px;
+    font-weight: 700;
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+
+  &__address,
+  &__date,
+  &__time {
+    width: 100%;
+
+    @media (min-width: $screen-md) {
+      width: auto;
+      margin-right: 24px;
+    }
+  }
+
+  &__training {
+    width: 100%;
+    background-size: 24px;
+    background-image: svg-load('../blocks/sprite-svg/svg/info-icon.svg', fill=$main-color--business);
+  }
+
+  &__address {
+    margin-bottom: 15px;
+    background-size: 18px 26px;
+    background-image: svg-load('../blocks/sprite-svg/svg/map-marker-icon.svg', fill=$main-color--business);
+  }
+
+  &__date {
+    margin-bottom: 15px;
+    background-size: 24px;
+    background-image: svg-load('../blocks/sprite-svg/svg/calendar-icon.svg', fill=$main-color--business);
+  }
+
+  &__time {
+    background-size: 24px;
+    background-image: svg-load('../blocks/sprite-svg/svg/clock-icon.svg', fill=$main-color--business);
+
+    @media (min-width: $screen-md) {
+      margin-right: 0;
+    }
+  }
+
+  &__text-col {
+    @include col(xs, 12);
+    @include col(md, 11);
+    @include col(xl, 7);
+  }
+
+  &__aside-col {
+    @include col(xs, 12);
+    @include col(md, 12);
+    @include col-offset(xl, 1);
+    @include col(xl, 4);
+  }
+
+  &__text {
+
+  }
+
+  &__subtitle {
+
+  }
+
+  &__trainer-cards {
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    @media (min-width: $screen-xl) {}
+
+    #{$block-name}__subtitle {
+      width: 100%;
+    }
+  }
+}
