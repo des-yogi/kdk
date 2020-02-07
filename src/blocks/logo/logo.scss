@@ -10,12 +10,12 @@
     height: 38px;
     fill: $main-color;
 
-    @media screen and (min-width: $screen-md) {
+    @media (min-width: $screen-md) {
       width: 43px;
       height: 42px;
     }
 
-    @media screen and (min-width: $screen-xl) {
+    @media (min-width: $screen-xl) {
       width: 66px;
       height: 64px;
     }

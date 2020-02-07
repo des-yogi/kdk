@@ -132,16 +132,12 @@ img {
 }
 
 a {
-  color: $link-color;
+  color: inherit;
   background-color: transparent;
   transition: color 0.3s;
 
   &:hover,
   &:focus {
-    color: $link-color--hover;
-  }
-
-  &:visited {
     color: $link-color--hover;
   }
 
@@ -264,15 +260,16 @@ a {
   font-weight: 500;
   font-size: inherit;
   text-decoration: none;
+  //color: $text-color;
 
   &::before {
     display: inline-block;
     vertical-align: text-bottom;
     content: "";
-    width: 16px;
-    height: 20px;
+    width: 20px;
+    height: 22px;
     margin-right: 15px;
-    background-size: 16px 20px;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     background-image: svg-load('../blocks/sprite-svg/svg/doc-icon.svg', fill=$main-color);
@@ -281,6 +278,64 @@ a {
   &:hover,
   &:focus {
     color: $main-color;
+  }
+
+  &--verified {
+
+    &::before {
+      background-image: svg-load('../blocks/sprite-svg/svg/verified-icon.svg', fill=$main-color);
+    }
+  }
+}
+
+.swiper-slide {
+  box-sizing: border-box;
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.swiper-pagination,
+.swiper-button-prev,
+.swiper-button-next {
+  position: static;
+}
+
+.swiper-pagination {
+  margin: 0 12px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  background-color: $main-color;
+  opacity: 0.45;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $main-color;
+  opacity: 1;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: $title-color;
+
+  &:hover,
+  &:focus {
+    color: $main-color;
+  }
+
+  &::after {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    opacity: 1;
   }
 }
 

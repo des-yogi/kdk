@@ -11,23 +11,36 @@ if(~navigator.appVersion.indexOf("Mac"))cth('osx');
 if(~navigator.appVersion.indexOf("Linux"))cth('linux');
 
 // $( document ).ready(function() {
-//   // code
-// });
-
-
-// На проекте нет jQuery, но хочется $( document ).ready...
-// function ready(fn) {
-//   if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading"){
-//     fn();
-//   } else {
-//     document.addEventListener('DOMContentLoaded', fn);
-//   }
-// }
 //
-// ready(function(){
-//   // code
 // });
+
 
 (function(){
 
+  var bLazy = new Blazy({
+    selector: '.b-lazy'
+  });
+
+  /*$( window ).resize(function() {
+    if ( $( window ).width() >= 992 || $( window ).width() >= 1280 ) {
+      // подзагрузка скрытых изображений по ширине экрана
+      bLazy.load($('.b-lazy'), true);
+    }
+  });*/
+
 }());
+
+(function () {
+  const submitBtn = document.querySelector('.btn-submit');
+  const agreementCheckbox = document.querySelector('#agreement');
+  const agreementHandler = function (e) {
+    if (!this.checked) {
+      submitBtn.disabled = true;
+    } else {
+      submitBtn.disabled = false;
+    }
+  };
+  if (agreementCheckbox) {
+    agreementCheckbox.addEventListener('change', agreementHandler);
+  }
+})();

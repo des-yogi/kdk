@@ -1,0 +1,153 @@
+.banner-card {
+  margin-bottom: 30px;
+
+  @media (min-width: $screen-xl) {
+    margin-bottom: 40px;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__wrapper {
+    padding-top: 30px;
+    border-top: 2px solid $border-color;
+
+    @media (min-width: $screen-xl) {
+      padding-top: 40px;
+    }
+
+    .col {
+      @include col(xs, 12);
+      @include col(md, 6);
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    padding: 8px 20px;
+    background-color: $main-color;
+
+    @media (min-width: $screen-xl) {
+      padding: 12px 30px;
+    }
+  }
+
+  &__header-text {
+    flex: 1 1 auto;
+    margin: 0;
+    color: $white;
+  }
+
+  &__header-img {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-right: 18px;
+    border-radius: 50%;
+    background-color: $white;
+
+    svg {
+      display: block;
+      width: 40px;
+      height: 41px;
+    }
+  }
+
+  &__content {
+    padding: 20px;
+
+    @media (min-width: $screen-xl) {
+      padding: 20px 30px 10px;
+    }
+  }
+
+  &__subtitle {
+    margin-top: 0;
+    margin-bottom: 8px;
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__doc-list {
+
+    @media (min-width: $screen-xl) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    li {
+      margin-bottom: 10px;
+
+      @media (min-width: $screen-xl) {
+        width: calc(50% - 12px);
+      }
+    }
+  }
+
+  &--trainers {
+    $main-color: $main-color--trainers;
+    border: 2px solid $main-color;
+
+    #{$block-name}__header {
+      background-color: $main-color;
+    }
+
+    #{$block-name}__header-img svg {
+      fill: $main-color;
+    }
+
+    .doc-link {
+
+      &::before {
+        background-image: svg-load('../blocks/sprite-svg/svg/doc-icon.svg', fill=$main-color);
+      }
+
+      &--verified {
+
+        &::before {
+          background-image: svg-load('../blocks/sprite-svg/svg/verified-icon.svg', fill=$main-color);
+        }
+      }
+
+      &--network {
+
+        &::before {
+          background-image: svg-load('../blocks/sprite-svg/svg/telegram-icon.svg', fill=$main-color);
+        }
+      }
+    }
+  }
+
+  &--business {
+    $main-color: $main-color--business;
+    border: 2px solid $main-color;
+
+    #{$block-name}__header {
+      background-color: $main-color;
+    }
+
+    #{$block-name}__header-img svg {
+      fill: $main-color;
+    }
+
+    .doc-link {
+
+      &::before {
+        background-image: svg-load('../blocks/sprite-svg/svg/doc-icon.svg', fill=$main-color);
+      }
+
+      &--network {
+
+        &::before {
+          background-image: svg-load('../blocks/sprite-svg/svg/telegram-icon.svg', fill=$main-color);
+        }
+      }
+    }
+  }
+}

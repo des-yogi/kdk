@@ -8,7 +8,46 @@
   $block-name:                &; // #{$block-name}__element
 
   &__intro {
+    margin-bottom: 30px;
 
+    @media (min-width: $screen-xl) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__intro-logo {
+    @include col(xs, 12);
+    @include col(md, 4);
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: 435px;
+    }
+  }
+
+  &__intro-text {
+    @include col(xs, 12);
+    @include col(md, 8);
+    @include col(xl, 7);
+
+    h1 {
+      margin-top: 30px;
+
+      @media (min-width: $screen-md) {
+        margin-top: 0;
+      }
+    }
+
+    div {
+      height: 100%;
+
+      @media (min-width: $screen-xl) {
+        padding-right: 60px;
+        border-bottom: 2px solid $main-color;
+        border-right: 2px solid $main-color;
+      }
+    }
   }
 
   &__news {

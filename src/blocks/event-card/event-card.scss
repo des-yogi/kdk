@@ -1,0 +1,88 @@
+.event-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-left: 2px solid $main-color;
+  border-bottom: 2px solid $main-color;
+  transition: color 0.2s ease-out;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &:hover,
+  &:focus {
+
+    #{$block-name}__title {
+      color: $main-color;
+    }
+  }
+
+  &__img {
+    flex: 0 0 auto;
+
+    img {
+      display: block;
+    }
+  }
+
+  &__text {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__content {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+
+  &__upper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    margin-bottom: 10px;
+  }
+
+  &__city {
+    margin-right: 20px;
+    font-weight: 700;
+    color: $main-color;
+  }
+
+  &__mission {
+    font-weight: 500;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    //align-items: flex-start;
+    padding-left: 20px;
+  }
+
+  &__link {
+    margin-bottom: -2px;
+
+    &::before {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      cursor: pointer;
+    }
+  }
+
+  .publishedon {
+    padding-bottom: 10px;
+  }
+}

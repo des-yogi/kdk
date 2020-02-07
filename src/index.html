@@ -16,10 +16,173 @@
 
       @@include('blocks/page-header/page-header.html')
 
-      <main role="main">
+      <main class="main" role="main">
 
         <div class="container">
 
+          <div class="main__title">
+            <h1 class="main__title-header">Скоро буде</h1>
+            <a href="#" class="btn  btn--link"><span>Події, що відбулися</span></a>
+          </div>
+
+          <section class="event-slider">
+            <div class="swiper-container  event-slider__container">
+
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide  event-slider__slide">
+                  <article class="event-card">
+                    <div class="embed-responsive  event-card__img">
+                      <picture>
+                        <source srcset="img/slide-img.webp" type="image/webp">
+                        <img src="img/slide-img.jpg" alt="Картинка" width="" height="">
+                      </picture>
+                    </div>
+                    <div class="event-card__text">
+                      <div class="event-card__content">
+                        <div class="event-card__upper">
+                          <span class="event-card__city">м. Київ</span>
+                          <span class="event-card__mission">Для тренеров</span>
+                        </div>
+                        <h4 class="event-card__title">Протести проти продажу землі: Аграрії перекрили вулицю Грушевського у Києві</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco...</p>
+                      </div>
+                      <div class="event-card__footer">
+                        <span class="publishedon">16.02.2020</span>
+                        <a href="#" class="btn  event-card__link">Детальніше</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="swiper-slide  event-slider__slide">
+                  <article class="event-card">
+                    <div class="embed-responsive  event-card__img">
+                      <picture>
+                        <source srcset="img/slide-img.webp" type="image/webp">
+                        <img src="img/slide-img.jpg" alt="Картинка" width="" height="">
+                      </picture>
+                    </div>
+                    <div class="event-card__text">
+                      <div class="event-card__content">
+                        <div class="event-card__upper">
+                          <span class="event-card__city">м. Київ</span>
+                          <span class="event-card__mission">Для тренеров</span>
+                        </div>
+                        <h4 class="event-card__title">Протести проти продажу землі: Аграрії перекрили вулицю Грушевського у Києві</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco...</p>
+                      </div>
+                      <div class="event-card__footer">
+                        <span class="publishedon">16.02.2020</span>
+                        <a href="#" class="btn  event-card__link">Детальніше</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="swiper-slide  event-slider__slide">
+                  <article class="event-card">
+                    <div class="embed-responsive  event-card__img">
+                      <picture>
+                        <source srcset="img/slide-img.webp" type="image/webp">
+                        <img src="img/slide-img.jpg" alt="Картинка" width="" height="">
+                      </picture>
+                    </div>
+                    <div class="event-card__text">
+                      <div class="event-card__content">
+                        <div class="event-card__upper">
+                          <span class="event-card__city">м. Київ</span>
+                          <span class="event-card__mission">Для тренеров</span>
+                        </div>
+                        <h4 class="event-card__title">Протести проти продажу землі: Аграрії перекрили вулицю Грушевського у Києві</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco...</p>
+                      </div>
+                      <div class="event-card__footer">
+                        <span class="publishedon">16.02.2020</span>
+                        <a href="#" class="btn  event-card__link">Детальніше</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+
+              </div>
+
+              <div class="slider-controls">
+                <div class="swiper-button-prev  event-slider__prev"></div>
+                <div class="swiper-pagination  event-slider__pagination"></div>
+                <div class="swiper-button-next  event-slider__next"></div>
+              </div>
+
+            </div>
+          </section>
+
+          <section class="banner-card__wrapper">
+            <div class="row">
+              <div class="col">
+                <article class="banner-card  banner-card--trainers">
+                  <div class="banner-card__header">
+                    <div class="banner-card__header-img">
+                      <svg width="39" height="38"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#kdk-logo"></use></svg>
+                    </div>
+                    <h3 class="banner-card__header-text">Тренерам</h3>
+                  </div>
+                  <div class="banner-card__content">
+                    <h4 class="banner-card__subtitle">Хто такий тренер?</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <ul class="list-nostyled  banner-card__doc-list">
+                      <li><a href="#" class="doc-link">Навчальні матеріали</a></li>
+                      <li><a href="#" class="doc-link">Умови сертифікації</a></li>
+                      <li><a href="#" class="doc-link  doc-link--verified">Сертифіковані тренери</a></li>
+                      <li><a href="#" class="doc-link  doc-link--network">Тренерська мережа</a></li>
+                    </ul>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col">
+                <article class="banner-card  banner-card--business">
+                  <div class="banner-card__header">
+                    <div class="banner-card__header-img">
+                      <svg width="39" height="38"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#kdk-logo"></use></svg>
+                    </div>
+                    <h3 class="banner-card__header-text">Аграрному та харчовому бізнесу</h3>
+                  </div>
+                  <div class="banner-card__content">
+                    <h4 class="banner-card__subtitle">Ціль</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <ul class="list-nostyled  banner-card__doc-list">
+                      <li><a href="#" class="doc-link">Навчальні матеріали</a></li>
+                      <li><a href="#" class="doc-link">Умови сертифікації</a></li>
+                      <li><a href="#" class="doc-link">Декларування</a></li>
+                      <li><a href="#" class="doc-link  doc-link--network">Мережа FPc</a></li>
+                    </ul>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <section class="declaration-portal">
+            <div class="row">
+
+              <div class="declaration-portal__col-img">
+                <div class="declaration-portal__img">
+                  <img src="img/check-decor.svg" alt="Checked img" width="309" height="201">
+                </div>
+              </div>
+
+              <div class="declaration-portal__col-text">
+                <div class="declaration-portal__text">
+                  <h2 class="declaration-portal__title">Деклараційний портал</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <div class="declaration-portal__link-wrapper">
+                    <a href="#" class="btn  btn--link">Детальніше</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
 
         </div>
 
