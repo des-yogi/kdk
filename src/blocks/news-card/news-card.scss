@@ -1,0 +1,78 @@
+.news-card {
+  display: block;
+  margin-bottom: 20px;
+  color: $title-color;
+  transition: color 0.2s easy-out;
+  border: 2px solid $border-color;
+  cursor: pointer;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: -2px;
+  }
+
+
+  $block-name:                &; // #{$block-name}__element
+
+  &:hover,
+  &:focus {
+   color: $main-color;
+  }
+
+  &__wrapper {
+
+  }
+
+  &__col-img {
+    @include col(xs, 12);
+    @include col(md, 5);
+    @include col(xl, 3);
+  }
+
+  &__col-text {
+    @include col(xs, 12);
+    @include col(md, 7);
+    @include col(xl, 9);
+  }
+
+  &__img {
+
+    img {
+      display: block;
+    }
+  }
+
+  &__text {
+    padding: 20px;
+
+    @media (min-width: $screen-md) {
+      padding-left: 0;
+    }
+
+    @media (min-width: $screen-xl) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: currentColor;
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__descr {
+    color: $text-color;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    p + p {
+      margin-top: 1em;
+    }
+  }
+}

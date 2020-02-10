@@ -134,7 +134,7 @@ img {
 a {
   color: inherit;
   background-color: transparent;
-  transition: color 0.3s;
+  transition: color 0.2s;
 
   &:hover,
   &:focus {
@@ -286,6 +286,14 @@ a {
       background-image: svg-load('../blocks/sprite-svg/svg/verified-icon.svg', fill=$main-color);
     }
   }
+}
+
+.publishedon {
+  display: block;
+  margin-bottom: 10px;
+  font-size: inherit;
+  font-weight: inherit;
+  color: $main-color;
 }
 
 .swiper-slide {

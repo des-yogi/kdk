@@ -8,7 +8,7 @@
   font-weight: 700;
   list-style: none;
   text-align: center;
-  color: $main-color;
+  color: $main-color--trainers;
 
   @media (min-width: $screen-lg) {
     font-size: 20px;
@@ -27,9 +27,11 @@
       //font-family: inherit;
       //font-size: inherit;
       //font-weight: inherit;
+      color: inherit;
+
 
       &.days {
-        color: $main-color;
+        //color: $main-color;
       }
     }
 

@@ -19,4 +19,36 @@
   &__title-header {
     margin: 0 24px 0 0;
   }
+
+  &__link-list {
+    display: inline-flex;
+  }
+
+  &__link-item {
+    color: $text-muted;
+
+    &:first-child {
+      margin-right: 10px;
+
+      @media (min-width: $screen-md) {
+        margin-right: 24px;
+      }
+    }
+
+    &.active {
+
+      #{$block-name}__link {
+        text-decoration: underline;
+        color: $title-color;
+        pointer-events: none;
+      }
+    }
+  }
+
+  &__link {
+    font-size: inherit;
+    font-weight: 700;
+    color: currentColor;
+    text-decoration: none;
+  }
 }

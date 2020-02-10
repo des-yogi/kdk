@@ -125,7 +125,7 @@
   }
 
   &--business {
-    $main-color: $main-color--business;
+    $main-color: $specblue-color;
     border: 2px solid $main-color;
 
     #{$block-name}__header {

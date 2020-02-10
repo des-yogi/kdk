@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', function () {
   var eventSwiper = new Swiper('.event-slider__container', {
       slidesPerView: 1,
       spaceBetween: 24,
+      preloadImages: false,
+      lazy: true,
       loop: true,
       pagination: {
         el: '.event-slider__pagination',

@@ -45,16 +45,16 @@ $line-height:                 1.375em !default;
       border-radius: $border-radius;
     }
 
-    @at-root input:hover ~ &:before {
+    @at-root input:hover ~ &::before {
       border-color: $main-color;
     }
 
-    @at-root input:focus ~ &:before {
+    @at-root input:focus ~ &::before {
       @include field-focus;
       border-color: $main-color;
     }
 
-    @at-root input:checked ~ &:before {
+    @at-root input:checked ~ &::before {
       background-color: $main-color;
       border-color: $main-color;
     }
@@ -79,7 +79,6 @@ $line-height:                 1.375em !default;
       }
     }
 
-    // / свой чекбокс без картинок
   }
 
   &__input {
@@ -106,4 +105,24 @@ $line-height:                 1.375em !default;
   &__help-text {
     @include field-help-text;
   }
+}
+
+.field-checkbox--trainers {
+  $main-color: $main-color--trainers;
+
+  $block-name:                &; // #{$block-name}__element
+}
+
+.field-checkbox__input--trainers:hover ~ .field-checkbox__name-text--trainers::before {
+  border-color: $main-color--trainers !important;
+}
+
+.field-checkbox__input--trainers:focus ~ .field-checkbox__name-text--trainers::before {
+  @include field-focus;
+  border-color: $main-color--trainers !important;
+}
+
+.field-checkbox__input--trainers:checked ~ .field-checkbox__name-text--trainers::before {
+  background-color: $main-color--trainers !important;
+  border-color: $main-color--trainers !important;
 }

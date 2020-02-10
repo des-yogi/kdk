@@ -1,0 +1,54 @@
+.apply-form {
+  $main-color: $main-color--trainers;
+  margin-bottom: 30px;
+  border: 2px solid $main-color;
+
+  $block-name:                &; // #{$block-name}__element
+
+  .countdown__wrapper {
+    padding: 20px;
+    border-top: 2px solid $main-color;
+
+    h4 {
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+  }
+
+  &__form {
+    padding: 20px;
+  }
+
+  &__form-inner {
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    @media (min-width: $screen-xl) {
+      display: block;
+    }
+
+    & > div {
+
+      @media (min-width: $screen-md) {
+        width: calc(50% - 12px);
+      }
+
+      @media (min-width: $screen-xl) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__required-filds {
+    font-size: 14px;
+    color: $main-color;
+  }
+}

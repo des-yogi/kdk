@@ -1,0 +1,13 @@
+.event-aside {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__gallery-item {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  &__map {
+    margin-bottom: 20px;
+  }
+}

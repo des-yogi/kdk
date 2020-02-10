@@ -1,0 +1,84 @@
+.trainer-card {
+  $main-color: $main-color--trainers;
+  position: relative;
+  margin-bottom: 20px;
+
+  @media (min-width: $screen-md) {
+    flex: 0 1 calc(50% - 24px);
+    max-width: 320px;
+    margin-right: 24px;
+  }
+
+  &:last-child {
+
+    @media (min-width: $screen-md) {
+      margin-right: 0;
+    }
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  .btn {
+    margin-bottom: -2px;
+
+    &::before {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      cursor: pointer;
+    }
+  }
+
+  &__img {
+
+    img {
+      display: block;
+    }
+  }
+
+  &__text {
+    border-left: 2px solid $main-color;
+    border-bottom: 2px solid $main-color;
+  }
+
+  &__content {
+    padding: 18px 20px 24px;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  &__sertificate {
+    display: inline-flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 45px;
+    margin-bottom: 0; // sertificate-platinum.svg
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 32px;
+
+    &--platinum {
+      background-image: url('../img/sertificate-platinum.svg');
+    }
+
+    &--gold {
+      background-image: url('../img/sertificate-gold.svg');
+    }
+
+    &--silver {
+      background-image: url('../img/sertificate-silver.svg');
+    }
+  }
+
+  &__btn-wrapper {
+    text-align: right;
+  }
+}

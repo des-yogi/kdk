@@ -27,7 +27,6 @@
     "field-actions": [],
     "field-checkbox": [],
     "field-select": [],
-    "field-text": [],
     "countdown": [],
     "text-input": [],
     "metismenu": [],
@@ -38,12 +37,21 @@
     "social-link": [],
     "event-card": [],
     "main": [],
-    "copyrights": []
+    "copyrights": [],
+    "event-article": [],
+    "events-list": [],
+    "event-aside": [],
+    "event-gallery": [],
+    "trainer-card": [],
+    "apply-form": [],
+    "news-card": [],
+    "our-team": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
     "./src/scss/mixins.scss",
-    "../../node_modules/swiper/css/swiper.min.css"
+    "../../node_modules/swiper/css/swiper.min.css",
+    "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css"
   ],
   "addCssAfter": [
     "./src/scss/print.scss"
@@ -55,6 +63,7 @@
     "./node_modules/blazy/blazy.min.js",
     "./node_modules/svg4everybody/dist/svg4everybody.js",
     "./node_modules/jquery/dist/jquery.min.js",
+    "./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js",
     "./node_modules/object-fit-images/dist/ofi.js",
     "./node_modules/metismenu/dist/metisMenu.min.js",
     "./src/js/libs/jquery.downCount.js",
