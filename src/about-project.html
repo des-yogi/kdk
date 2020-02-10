@@ -20,13 +20,15 @@
 
         <div class="container">
 
+          @@include('blocks/breadcrumbs/breadcrumbs.html')
+
           <article class="about-project">
 
             <section class="about-project__intro">
               <div class="row">
                 <div class="about-project__intro-logo">
-                  <a href="#" title="" target="_blank" rel="nofollow">
-                    <img src="img/matra-logo.png" alt="Лого">
+                  <a href="#" target="_blank" rel="nofollow" title="Логотип">
+                    <img class="b-lazy" data-src="img/matra-logo.png" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Лого">
                   </a>
                 </div>
                 <div class="about-project__intro-text">
@@ -38,7 +40,88 @@
               </div>
             </section>
 
-            <section class="about-project__news"></section>
+            <section class="about-project__news">
+
+              <div class="main__title">
+                <h2 class="main__title-header">Новини проекту</h2>
+                <a href="#" class="btn  btn--link"><span>Читати усі новини</span></a>
+              </div>
+
+              <a class="news-card">
+                <div class="row">
+
+                  <div class="news-card__col-img">
+                    <div class="embed-responsive embed-responsive--4-3  news-card__img">
+                      <picture>
+                        <source data-srcset="img/news-img.webp" media="(min-width: 1440px)" type="image/webp">
+                        <source data-srcset="img/news-img.jpg" media="(min-width: 1440px)">
+                        <!-- 322x241 -->
+                        <source data-srcset="img/news-img.webp" media="(min-width: 992px)" type="image/webp">
+                        <source data-srcset="img/news-img.jpg" media="(min-width: 992px)">
+                        <!-- 568x426 -->
+                        <source data-srcset="img/news-img.webp" media="(min-width: 768px)" type="image/webp">
+                        <source data-srcset="img/news-img.jpg" media="(min-width: 768px)">
+                        <!-- 382x286 -->
+                        <source data-srcset="img/news-img.webp" media="(min-width: 480px)" type="image/webp">
+                        <source data-srcset="img/news-img.jpg" media="(min-width: 480px)">
+                        <!-- 725x544 -->
+                        <source data-srcset="img/news-img.webp" type="media/webp">
+                        <img class="b-lazy" data-src="img/news-img.jpg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Картинка" width="440" height="330">
+                      </picture>
+                    </div>
+                  </div>
+
+                  <div class="news-card__col-text">
+                    <div class="news-card__text">
+                      <span class="publishedon  news-card__publishedon">15.11.2019</span>
+                      <h4 class="news-card__title">В короткостроковій перспективі буде сформоване коло громадських організацій – активних учасників реформування системи забезпечення безпеки і якості харчової продукції в регіонах та коло тренерів/кураторів.</h4>
+                      <div class="news-card__descr">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo...</p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </a>
+
+              <a class="news-card">
+                <div class="row">
+
+                  <div class="news-card__col-img">
+                    <div class="embed-responsive embed-responsive--4-3  news-card__img">
+                      <picture>
+                        <source data-srcset="img/news-img.webp" media="(min-width: 1440px)" type="image/webp">
+                        <source data-srcset="img/news-img.jpg" media="(min-width: 1440px)">
+                        <!-- 322x241 -->
+                        <source data-srcset="img/news-img.webp" media="(min-width: 992px)" type="image/webp">
+                        <source data-srcset="img/news-img.jpg" media="(min-width: 992px)">
+                        <!-- 568x426 -->
+                        <source data-srcset="img/news-img.webp" media="(min-width: 768px)" type="image/webp">
+                        <source data-srcset="img/news-img.jpg" media="(min-width: 768px)">
+                        <!-- 382x286 -->
+                        <source data-srcset="img/news-img.webp" media="(min-width: 480px)" type="image/webp">
+                        <source data-srcset="img/news-img.jpg" media="(min-width: 480px)">
+                        <!-- 725x544 -->
+                        <source data-srcset="img/news-img.webp" type="media/webp">
+                        <img class="b-lazy" data-src="img/news-img.jpg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Картинка" width="440" height="330">
+                      </picture>
+                    </div>
+                  </div>
+
+                  <div class="news-card__col-text">
+                    <div class="news-card__text">
+                      <span class="publishedon  news-card__publishedon">15.11.2019</span>
+                      <h4 class="news-card__title">В короткостроковій перспективі буде сформоване коло громадських організацій – активних учасників реформування системи забезпечення безпеки і якості харчової продукції в регіонах та коло тренерів/кураторів.</h4>
+                      <div class="news-card__descr">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo...</p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </a>
+
+            </section>
 
             <div class="about-project__content">
 
@@ -129,6 +212,75 @@
 
           </article>
 
+          <section class="our-team">
+
+            <h2 class="our-team__title">Наша команда</h2>
+
+            <ul class="list-nostyled  row">
+
+              <li class="our-team__col">
+                <div class="our-team__item">
+                  <div class="embed-responsive embed-responsive--4-3  our-team__img">
+                    <picture>
+                      <source srcset="img/team-img.webp" type="media/webp">
+                      <img src="img/team-img.jpg" alt="Картинка" width="" height="">
+                    </picture>
+                  </div>
+                  <div class="our-team__text">
+                    <h4 class="our-team__subtitle">Лариса Старикова</h4>
+                    <span class="our-team__position">Координатор проекту</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="our-team__col">
+                <div class="our-team__item">
+                  <div class="embed-responsive embed-responsive--4-3  our-team__img">
+                    <picture>
+                      <source srcset="img/team-img.webp" type="media/webp">
+                      <img src="img/team-img.jpg" alt="Картинка" width="" height="">
+                    </picture>
+                  </div>
+                  <div class="our-team__text">
+                    <h4 class="our-team__subtitle">Лариса Старикова</h4>
+                    <span class="our-team__position">Координатор проекту</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="our-team__col">
+                <div class="our-team__item">
+                  <div class="embed-responsive embed-responsive--4-3  our-team__img">
+                    <picture>
+                      <source srcset="img/team-img.webp" type="media/webp">
+                      <img src="img/team-img.jpg" alt="Картинка" width="" height="">
+                    </picture>
+                  </div>
+                  <div class="our-team__text">
+                    <h4 class="our-team__subtitle">Лариса Старикова</h4>
+                    <span class="our-team__position">Координатор проекту</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="our-team__col">
+                <div class="our-team__item">
+                  <div class="embed-responsive embed-responsive--4-3  our-team__img">
+                    <picture>
+                      <source srcset="img/team-img.webp" type="media/webp">
+                      <img src="img/team-img.jpg" alt="Картинка" width="" height="">
+                    </picture>
+                  </div>
+                  <div class="our-team__text">
+                    <h4 class="our-team__subtitle">Лариса Старикова</h4>
+                    <span class="our-team__position">Координатор проекту</span>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+
+          </section>
 
         </div>
 
@@ -137,12 +289,7 @@
     </div>
 
     <div class="page__footer-wrapper">
-      <div class="copyrights">
-        <div class="container">
-          <span>© 2020. КДК.</span>
-        </div>
-      </div>
-      <!-- @@include('blocks/page-footer/page-footer.html') -->
+      @@include('blocks/page-footer/page-footer.html')
     </div>
 
   </div>

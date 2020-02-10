@@ -8,7 +8,7 @@
   $block-name:                &;  // #{$block-name}__element
 
   &__header {
-
+    margin-bottom: 30px;
   }
 
   &__title {
@@ -99,6 +99,11 @@
     @include col(xs, 12);
     @include col(md, 11);
     @include col(xl, 7);
+    order: 1;
+
+    @media (min-width: $screen-xl) {
+      order: 0;
+    }
   }
 
   &__aside-col {
@@ -114,6 +119,12 @@
 
   &__subtitle {
 
+    &:first-child {
+
+      @media (min-width: $screen-xl) {
+        margin-top: 0;
+      }
+    }
   }
 
   &__trainer-cards {

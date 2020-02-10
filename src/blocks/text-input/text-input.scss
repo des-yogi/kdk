@@ -107,4 +107,36 @@
   &__error {
     @include field-help-text;
   }
+
+  &--trainers {
+    $main-color: $main-color--trainers;
+
+    #{$block-name}__field {
+
+      &:hover {
+        border-color: $main-color;
+      }
+
+      &:focus,
+      &:not([value=""]) {
+        @include field-focus;
+        border-color: $main-color;
+
+        & + #{$block-name}__label > #{$block-name}__label-content {
+          font-size: 14px;
+          color: $main-color;
+          transform: translateY(-20px);
+        }
+      }
+
+      &[required] {
+        padding-right: 30px;
+        background: svg-load('../blocks/sprite-svg/svg/asterisk-icon.svg', fill=$main-color);
+        background-repeat: no-repeat;
+        //background-position: right 15px center;
+        background-position: right 15px top 15px;
+        background-size: 7px;
+      }
+    }
+  }
 }

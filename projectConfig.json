@@ -42,7 +42,10 @@
     "events-list": [],
     "event-aside": [],
     "event-gallery": [],
-    "trainer-card": []
+    "trainer-card": [],
+    "apply-form": [],
+    "news-card": [],
+    "our-team": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

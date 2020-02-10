@@ -1,0 +1,65 @@
+.our-team {
+  margin-bottom: 40px;
+
+  @media (min-width: $screen-xl) {
+    //margin-bottom: 60px;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__col {
+    @include col(xs, 12);
+    @include col(md, 6);
+    @include col(xl, 4);
+    margin-bottom: 20px;
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+  }
+
+  &__item {
+
+    @media (min-width: $screen-md) {
+      padding-right: 17.05%;
+      background-repeat: no-repeat;
+      background-position: right top;
+      background-size: 437px;
+      background-image: url(../img/photo-bg.svg);
+    }
+
+    @media (min-width: $screen-xl) {
+      padding-right: 115px;
+    }
+  }
+
+  &__img {
+    margin-bottom: 20px;
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 24px;
+    }
+
+    img {
+      display: block;
+    }
+  }
+
+  &__text {
+
+  }
+
+  &__subtitle {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  &__position {
+
+  }
+}
+

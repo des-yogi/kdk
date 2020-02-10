@@ -66,7 +66,7 @@
                     <div class="trainer-card__text">
                       <div class="trainer-card__content">
                         <h4 class="trainer-card__title">Лариса Старикова</h4>
-                        <p class="trainer-card__sertificate"><span>Сертифікат: Платиновий</span></p>
+                        <p class="trainer-card__sertificate  trainer-card__sertificate--platinum"><span>Сертифікат: Платиновий</span></p>
                       </div>
                       <div class="trainer-card__btn-wrapper">
                         <a href="#" class="btn  btn--trainers">Детальніше</a>
@@ -84,7 +84,7 @@
                     <div class="trainer-card__text">
                       <div class="trainer-card__content">
                         <h4 class="trainer-card__title">Лариса Старикова</h4>
-                        <p class="trainer-card__sertificate"><span>Сертифікат: Платиновий</span></p>
+                        <p class="trainer-card__sertificate  trainer-card__sertificate--gold"><span>Сертифікат: Платиновий</span></p>
                       </div>
                       <div class="trainer-card__btn-wrapper">
                         <a href="#" class="btn  btn--trainers">Детальніше</a>
@@ -102,7 +102,7 @@
                     <div class="trainer-card__text">
                       <div class="trainer-card__content">
                         <h4 class="trainer-card__title">Лариса Старикова</h4>
-                        <p class="trainer-card__sertificate"><span>Сертифікат: Платиновий</span></p>
+                        <p class="trainer-card__sertificate  trainer-card__sertificate--silver"><span>Сертифікат: Платиновий</span></p>
                       </div>
                       <div class="trainer-card__btn-wrapper">
                         <a href="#" class="btn  btn--trainers">Детальніше</a>
@@ -118,6 +118,107 @@
 
                 <div class="event-aside">
 
+                  <div class="apply-form">
+
+                    <form id="" class="apply-form__form" action="/" method="post">
+
+                      <h3 class="apply-form__title">Записатись на подію</h3>
+                      <p class="apply-form__required-filds"><strong>*</strong> Поля, обов'язкові для заповнення</p>
+
+                      <div class="apply-form__form-inner">
+
+                        <div class="text-input  text-input--trainers">
+                          <div class="text-input__wrapper">
+                            <input form="" id="input-name" class="text-input__field" type="text" name="name" value="" onblur="this.setAttribute('value', this.value);" required>
+                            <label class="text-input__label" for="input-name">
+                              <span class="text-input__label-content">Ім'я</span>
+                            </label>
+                          </div>
+                          <span class="text-input__error"></span>
+                        </div>
+
+                        <div class="text-input  text-input--trainers">
+                          <div class="text-input__wrapper">
+                            <input form="" id="input-surname" class="text-input__field" type="text" name="surname" value="" onblur="this.setAttribute('value', this.value);" required>
+                            <label class="text-input__label" for="input-surname">
+                              <span class="text-input__label-content">Прізвище</span>
+                            </label>
+                          </div>
+                          <span class="text-input__error"></span>
+                        </div>
+
+                        <div class="text-input  text-input--trainers">
+                          <div class="text-input__wrapper">
+                            <input form="" id="input-email" class="text-input__field" type="email" name="email" value="" onblur="this.setAttribute('value', this.value);" required>
+                            <label class="text-input__label" for="input-email">
+                              <span class="text-input__label-content">E-Mail</span>
+                            </label>
+                          </div>
+                          <span class="text-input__error"></span>
+                        </div>
+
+                        <div class="text-input  text-input--trainers">
+                          <div class="text-input__wrapper">
+                            <input form="" id="input-tel" class="text-input__field" type="tel" name="tel" value="" onblur="this.setAttribute('value', this.value);" required>
+                            <label class="text-input__label" for="input-tel">
+                              <span class="text-input__label-content">Телефон</span>
+                            </label>
+                          </div>
+                          <span class="text-input__error"></span>
+                        </div>
+
+                        <div class="text-input  text-input--trainers">
+                          <div class="text-input__wrapper">
+                            <input form="" id="input-position" class="text-input__field" type="text" name="position" value="" onblur="this.setAttribute('value', this.value);">
+                            <label class="text-input__label" for="input-position">
+                              <span class="text-input__label-content">Посада</span>
+                            </label>
+                          </div>
+                          <span class="text-input__error"></span>
+                        </div>
+
+                        <div class="text-input  text-input--trainers">
+                          <div class="text-input__wrapper">
+                            <input form="" id="input-job" class="text-input__field" type="text" name="job" value="" onblur="this.setAttribute('value', this.value);">
+                            <label class="text-input__label" for="input-job">
+                              <span class="text-input__label-content">Місце роботи</span>
+                            </label>
+                          </div>
+                          <span class="text-input__error"></span>
+                        </div>
+
+                        <div class="text-input  text-input--trainers">
+                          <div class="text-input__wrapper">
+                            <textarea form="" id="input-message" class="text-input__field  text-input__field--textarea" name="message" value="" rows="4" onblur="this.setAttribute('value', this.value);"></textarea>
+                            <label class="text-input__label" for="input-message">
+                              <span class="text-input__label-content">Очікування від тренінгу</span>
+                            </label>
+                          </div>
+                        </div>
+
+                        <div>
+                          <div class="field-actions  field-actions--trainers">
+                            <input class="btn  btn--trainers  btn-submit" type="submit" name="" value="Зареєструватися">
+                          </div>
+
+                          <div class="field-checkbox  field-checkbox--trainers">
+                            <label class="field-checkbox__name">
+                              <input id="agreement" class="field-checkbox__input  field-checkbox__input--trainers" type="checkbox" checked>
+                              <span class="field-checkbox__name-text  field-checkbox__name-text--trainers">Даю згоду на обробку персональних даних згідно з <a href="#">політикою конфіденційності</a></span>
+                            </label>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </form>
+
+                    <div class="countdown__wrapper">
+                      <h4>До початку залишилось</h4>
+                      @@include('blocks/countdown/countdown.html')
+                    </div>
+                  </div>
+
                   <div class="event-aside__map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2095.327966994701!2d30.510939624242226!3d50.45561411959904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd78660bd6f149d6f!2z0JrQuNC10LLRgdC60LjQuSDQvtGE0LjRgQ!5e0!3m2!1sru!2sua!4v1581079530861!5m2!1sru!2sua" style="width:100%;height:160px;border:0;" allowfullscreen=""></iframe>
                   </div>
@@ -132,6 +233,13 @@
                     <h3>Це було так:</h3>
 
                     <div class="event-aside__gallery-wrapper">
+
+                      <a href="img/profile-card-img.jpg" class="embed-responsive  embed-responsive--4-3  event-aside__gallery-item" data-fancybox="gallery" data-caption="Заголовок #1">
+                        <picture>
+                          <source data-srcset="img/profile-card-img.webp" type="image/webp">
+                          <img class="b-lazy" data-src="img/profile-card-img.jpg" alt="Имя тренера" width="440" height="330">
+                        </picture>
+                      </a>
 
                       <a href="img/profile-card-img.jpg" class="embed-responsive  embed-responsive--4-3  event-aside__gallery-item" data-fancybox="gallery" data-caption="Заголовок #1">
                         <picture>

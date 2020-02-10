@@ -64,7 +64,18 @@
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 32px;
-    background-image: url('../img/sertificate-platinum.svg');
+
+    &--platinum {
+      background-image: url('../img/sertificate-platinum.svg');
+    }
+
+    &--gold {
+      background-image: url('../img/sertificate-gold.svg');
+    }
+
+    &--silver {
+      background-image: url('../img/sertificate-silver.svg');
+    }
   }
 
   &__btn-wrapper {

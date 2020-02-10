@@ -1,9 +1,13 @@
-// В этом файле должны быть стили для БЭМ-блока event-aside, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .event-aside {
 
   $block-name:                &; // #{$block-name}__element
 
+  &__gallery-item {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  &__map {
+    margin-bottom: 20px;
+  }
 }

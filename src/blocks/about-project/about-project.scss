@@ -1,8 +1,10 @@
 .about-project {
-  padding: 32px 0;
+  //padding: 32px 0 0;
+  margin-bottom: 30px;
 
   @media (min-width: $screen-xl) {
-    padding: 40px 0;
+    //padding: 40px 0 0;
+    margin-bottom: 90px;
   }
 
   $block-name:                &; // #{$block-name}__element
@@ -51,7 +53,11 @@
   }
 
   &__news {
+    margin-bottom: 30px;
 
+    @media (min-width: $screen-xl) {
+      margin-bottom: 40px;
+    }
   }
 
   &__content {
