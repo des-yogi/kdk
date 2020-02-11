@@ -309,6 +309,10 @@ a {
   font-size: inherit;
   font-weight: inherit;
   color: $main-color;
+
+  &--bottom {
+    margin-bottom: 0;
+  }
 }
 
 .swiper-slide {
