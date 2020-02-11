@@ -252,6 +252,21 @@ a {
   );
 }
 
+.col-1-2-3 {
+  @include col(xs, 12);
+  @include col(md, 6);
+  @include col(xl, 4);
+  margin-bottom: 20px;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $screen-xl) {
+    margin-bottom: 40px;
+  }
+}
+
 .doc-link {
   position: relative;
   display: inline-block;

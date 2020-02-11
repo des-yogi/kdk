@@ -8,7 +8,7 @@ $border-color:                hsl(0, 0%, 60%) !default;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 15px;
   margin-bottom: 60px;
 
   @media (min-width: $screen-md) {
@@ -16,7 +16,7 @@ $border-color:                hsl(0, 0%, 60%) !default;
   }
 
   @media (min-width: $screen-xl) {
-    margin-top: 40px;
+    margin-top: 0;
     margin-bottom: 90px;
   }
 
@@ -27,15 +27,7 @@ $border-color:                hsl(0, 0%, 60%) !default;
     flex-wrap: wrap;
     list-style: none;
     margin: 0;
-    //padding-left: 0;
-
-    li + li {
-      //margin-left: 13px;
-
-      @media (min-width: $screen-md) {
-        //margin-left: 15px;
-      }
-    }
+    padding-left: 0;
   }
 
   &__item {
