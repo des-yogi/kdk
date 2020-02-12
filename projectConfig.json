@@ -47,7 +47,8 @@
     "news-card": [],
     "our-team": [],
     "sert-article": [],
-    "profile": []
+    "profile": [],
+    "page-404": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

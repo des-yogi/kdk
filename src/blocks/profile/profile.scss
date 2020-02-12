@@ -1,9 +1,123 @@
-// В этом файле должны быть стили для БЭМ-блока profile, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .profile {
+  $main-color: $main-color--trainers;
 
   $block-name:                &; // #{$block-name}__element
 
+  &__banner {
+    margin-bottom: 30px;
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__banner-img-col {
+    @include col(xs, 12);
+    @include col(md, 6);
+    @include col(xl, 4);
+  }
+
+  &__banner-text-col {
+    @include col(xs, 12);
+    @include col(md, 6);
+    @include col(xl, 7);
+  }
+
+  &__banner-img {
+
+    img {
+      display: block;
+    }
+  }
+
+  &__banner-text {
+    height: 100%;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 120px;
+    border-right: 2px solid $main-color;
+    border-bottom: 2px solid $main-color;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom 20px;
+    background-image: url(../img/profile-bg.svg);
+
+    @media (min-width: $screen-sm) {
+      background-size: 425px;
+    }
+
+    @media (min-width: $screen-md) {
+      padding-left: 20px;
+      background-size: 82%;
+    }
+
+    @media (min-width: $screen-xl) {
+      padding: 30px 30px 160px;
+      background-size: 85%;
+      background-position: right bottom 30px;
+    }
+  }
+
+  &__banner-title {
+    margin-top: 0;
+    margin-bottom: 18px;
+  }
+
+  &__sertificate {
+    display: inline-flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 45px;
+    margin-bottom: 0;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 32px;
+
+    &--platinum {
+      background-image: url('../img/sertificate-platinum.svg');
+    }
+
+    &--gold {
+      background-image: url('../img/sertificate-gold.svg');
+    }
+
+    &--silver {
+      background-image: url('../img/sertificate-silver.svg');
+    }
+  }
+
+  &__content-title-col {
+    @include col(xs, 12);
+    @include col(md, 12);
+    @include col(xl, 4);
+  }
+
+  &__content-text-col {
+    @include col(xs, 12);
+    @include col(md, 12);
+    @include col(xl, 7);
+    margin-bottom: 20px;
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__content-title {
+    padding-top: 20px;
+    margin-top: 0;
+    border-top: 2px solid $main-color;
+
+    @media (min-width: $screen-xl) {
+      padding-top: 24px;
+    }
+  }
+
+  &__content-text {
+
+    @media (min-width: $screen-xl) {
+      padding: 24px 0;
+    }
+  }
 }
