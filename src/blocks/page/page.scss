@@ -29,6 +29,13 @@
 
   &__content {
     flex-grow: 1;
+
+    &--bg {
+
+      @media (min-width: $screen-md) {
+        background: linear-gradient(to right, $white, $white calc(50% + 12px), $main-color calc(50% + 12px));
+      }
+    }
   }
 
   &__footer-wrapper {
@@ -309,6 +316,10 @@ a {
   font-size: inherit;
   font-weight: inherit;
   color: $main-color;
+
+  &--bottom {
+    margin-bottom: 0;
+  }
 }
 
 .swiper-slide {

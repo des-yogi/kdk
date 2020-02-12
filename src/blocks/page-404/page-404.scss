@@ -1,0 +1,110 @@
+.page-404 {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__text-col {
+    @include col(xs, 12);
+    @include col(md, 6);
+    margin-bottom: 30px;
+  }
+
+  &__img-col {
+    @include col(xs, 12);
+    @include col(md, 6);
+  }
+
+  &__text {
+    padding-top: 30px;
+
+    @media (min-width: $screen-md) {
+      padding-top: 65px;
+    }
+
+    @media (min-width: $screen-xl) {
+      padding-top: 90px;
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 32px;
+
+    & > span {
+      display: block;
+      margin-top: 20px;
+
+      @media (min-width: $screen-xl) {
+        margin-top: 24px;
+      }
+    }
+  }
+
+  &__link-wrapper {
+
+    .btn {
+      width: 100%;
+
+      @media (min-width: $screen-md) {
+        max-width: 290px;
+      }
+
+      @media (min-width: $screen-xl) {
+        max-width: 320px;
+      }
+    }
+  }
+
+  &__img {
+    position: relative;
+    padding: 30px 0;
+    text-align: center;
+    background-color: $main-color;
+
+    @media (min-width: $screen-md) {
+      padding-top: 70px;
+      padding-bottom: 50px;
+      padding-left: 30px;
+    }
+
+    @media (min-width: $screen-xl) {
+      padding-top: 120px;
+      padding-bottom: 120px;
+      padding-left: 60px;
+    }
+
+    @media (min-width: $screen-xxl) {
+      padding-top: 200px;
+    }
+
+    &::before,
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+      height: 100%;
+      background-color: $main-color;
+
+      @media (min-width: $screen-md) {
+        display: none;
+      }
+    }
+
+    &::before {
+      left: -20px;
+      width: 25px;
+    }
+
+    &::after {
+      right: -20px;
+      width: 25px;
+    }
+
+    img {
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+}

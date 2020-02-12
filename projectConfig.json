@@ -45,7 +45,10 @@
     "trainer-card": [],
     "apply-form": [],
     "news-card": [],
-    "our-team": []
+    "our-team": [],
+    "sert-article": [],
+    "profile": [],
+    "page-404": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
