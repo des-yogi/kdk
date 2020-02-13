@@ -22,6 +22,10 @@
 
   &__link-list {
     display: inline-flex;
+
+    #{$block-name}__link-item + #{$block-name}__link-item {
+      margin-top: 0;
+    }
   }
 
   &__link-item {

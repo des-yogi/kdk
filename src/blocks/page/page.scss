@@ -274,6 +274,10 @@ a {
   }
 }
 
+.col-1-2-3 + .col-1-2-3 {
+  margin-top: 0;
+}
+
 .doc-link {
   position: relative;
   display: inline-block;
