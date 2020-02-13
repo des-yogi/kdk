@@ -1042,6 +1042,8 @@ a[href^="tel:"] {
   padding-left: 12px;
   padding-right: 12px;
   margin-bottom: 20px; }
+.col-1-2-3 + .col-1-2-3 {
+  margin-top: 0; }
 .doc-link {
   position: relative;
   display: inline-block;
@@ -2796,6 +2798,8 @@ input:checked ~ .field-checkbox__name-text:after {
     padding-left: 12px;
     padding-right: 12px;
     margin-bottom: 20px; }
+.our-team__col + .our-team__col {
+      margin-top: 0; }
 .our-team__title {
     margin-top: 0; }
 .our-team__img {
