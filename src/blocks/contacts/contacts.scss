@@ -1,0 +1,117 @@
+.contacts {
+
+  $block-name:                &; // #{$block-name}__element
+
+  .social-link__list {
+    justify-content: flex-start;
+  }
+
+  .mail-icon,
+  .tel-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .mail-icon {
+    background-size: 24px 24px;
+    background-image: svg-load('../blocks/contacts/bg-img/email-icon.svg', fill=$main-color);
+  }
+
+  .tel-icon {
+    background-size: 24px 24px;
+    background-image: svg-load('../blocks/contacts/bg-img/phone-icon.svg', fill=$main-color);
+  }
+
+  &__inner {
+    margin-bottom: 60px;
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 90px;
+    }
+  }
+
+  &__text-col {
+    @include col(xs, 12);
+    @include col(md, 5);
+    @include col(xl, 4);
+    margin-bottom: 35px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__form-col {
+    @include col(xs, 12);
+    @include col(md, 7);
+    @include col-offset(xl, 1);
+    @include col(xl, 6);
+  }
+
+  &__text {
+
+  }
+
+  &__title {
+    margin-top: 0;
+  }
+
+  &__subtitle {
+    margin-top: 0;
+  }
+
+  &__list {
+    margin-bottom: 35px;
+
+    li + li {
+      margin-top: 24px;
+    }
+  }
+
+  &__tel {
+    display: inline-flex;
+    flex-direction: column;
+    //flex-wrap: wrap;
+
+    a + a {
+      margin-top: 10px;
+    }
+  }
+
+  &__social {
+
+    @media (min-width: $screen-md) {
+      padding-top: 24px;
+      border-top: 2px solid $border-color;
+    }
+  }
+
+  &__form-wrapper {
+    padding: 30px 20px;
+    border: 2px solid $main-color;
+
+    @media (min-width: $screen-md) {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+
+    @media (min-width: $screen-xl) {
+      padding-left: 115px;
+      padding-right: 115px;
+    }
+  }
+
+  &__form-title {
+    margin-top: 0;
+  }
+
+  &__form {
+
+
+  }
+}

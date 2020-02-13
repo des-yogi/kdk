@@ -48,7 +48,8 @@
     "our-team": [],
     "sert-article": [],
     "profile": [],
-    "page-404": []
+    "page-404": [],
+    "contacts": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
